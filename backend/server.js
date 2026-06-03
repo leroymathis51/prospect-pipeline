@@ -39,7 +39,7 @@ app.post("/api/agent", async (req, res) => {
 
   // Body de la requete Anthropic
   const body = {
-    model: "claude-sonnet-4-20250514",
+    model: "claude-opus-4-5",
     max_tokens: 4000,
     system: SYSTEMS[step],
     messages: [{ role: "user", content: userContent }]
