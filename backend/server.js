@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json({ limit: "2mb" }));
 
 const ANTHROPIC_API = "https://api.anthropic.com/v1/messages";
